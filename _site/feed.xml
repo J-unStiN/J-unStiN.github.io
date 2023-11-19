@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>JunStiN</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-11-14T00:40:49+08:00</updated>
+  <updated>2023-11-19T23:46:46+09:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,109 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>한화시스템 BEYOND 캠프 3기 1주차 회고</title>
+    <link href="http://localhost:4000/posts/1%EC%A3%BC%EC%B0%A8%ED%9A%8C%EA%B3%A0/" rel="alternate" type="text/html" title="한화시스템 BEYOND 캠프 3기 1주차 회고" />
+    <published>2023-11-19T12:00:00+09:00</published>
+  
+    <updated>2023-11-19T23:39:47+09:00</updated>
+  
+    <id>http://localhost:4000/posts/1%EC%A3%BC%EC%B0%A8%ED%9A%8C%EA%B3%A0/</id>
+    <content src="http://localhost:4000/posts/1%EC%A3%BC%EC%B0%A8%ED%9A%8C%EA%B3%A0/" />
+    <author>
+      <name>your_full_name</name>
+    </author>
+
+  
+    
+    <category term="한화시스템" />
+    
+    <category term="주차회고" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+한화시스템 BEYOND 캠프 3기 1주차 회고
+
+&amp;lt;/br&amp;gt;
+
+내용
+
+
+
+1. 전반적인 느낀 점 (일주일 동안 한 일)
+- 지금까지 7시 출근 - 4시 퇴근을 한 입장해서 
+  9시출근 - 6시퇴근이라는게 가장 좋다.
+그리고 교육장소까지 가는 시간도 40분이면 갈 수 있어서 위치적으로도 좋아서 마음에 든다.
+
+
+2. 좋았던 점 (좋았거나 내가 잘했던 점)
+- 강사님이 스타트업 리드, 팀장 경험이 있었다는 점.  
+국비는 강사의 역량이 절반이상이라도 들었는데, 적어도 인터넷에서 본 이상한 강사님이 아니라서 좋았다.  
+- 커리큘럼을 봤을때 생각보다 탄탄했다. (CI/CD까지 하는 곳은 잘 못본거같은데, 거기다가 Action!!)  
+- 생각보다 건물 안이 깨끗했고 원두커피를 아침, 점심, 저...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>첫 블로그 글, 소개</title>
+    <link href="http://localhost:4000/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%86%8C%EA%B0%9C/" rel="alternate" type="text/html" title="첫 블로그 글, 소개" />
+    <published>2023-11-17T23:09:22+09:00</published>
+  
+    <updated>2023-11-19T22:37:23+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%86%8C%EA%B0%9C/</id>
+    <content src="http://localhost:4000/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%86%8C%EA%B0%9C/" />
+    <author>
+      <name>your_full_name</name>
+    </author>
+
+  
+    
+    <category term="일상" />
+    
+    <category term="소개" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      블로그 첫 글
+
+Email - junstin119@gmail.com
+
+GitHub - https://github.com/J-unStiN
+
+소개 - https://junstin.notion.site/68e463fee882498cb424226dff3447ed?pvs=4
+
+
+  추후 꾸준하게 해당글을 수정하도록 약속함.
+
+
+    </summary>
+  
+
+  </entry>
 
 </feed>
 
