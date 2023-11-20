@@ -4,16 +4,16 @@
   <id>http://localhost:4000/</id>
   <title>JunStiN</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-11-19T23:46:46+09:00</updated>
+  <updated>2023-11-20T08:50:52+09:00</updated>
   <author>
-    <name>your_full_name</name>
+    <name>JunStiN</name>
     <uri>http://localhost:4000/</uri>
   </author>
   <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
-  <rights> © 2023 your_full_name </rights>
+  <rights> © 2023 JunStiN </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
@@ -21,15 +21,15 @@
   
   <entry>
     <title>한화시스템 BEYOND 캠프 3기 1주차 회고</title>
-    <link href="http://localhost:4000/posts/1%EC%A3%BC%EC%B0%A8%ED%9A%8C%EA%B3%A0/" rel="alternate" type="text/html" title="한화시스템 BEYOND 캠프 3기 1주차 회고" />
+    <link href="http://localhost:4000/posts/1week/" rel="alternate" type="text/html" title="한화시스템 BEYOND 캠프 3기 1주차 회고" />
     <published>2023-11-19T12:00:00+09:00</published>
   
-    <updated>2023-11-19T23:39:47+09:00</updated>
+    <updated>2023-11-20T00:01:24+09:00</updated>
   
-    <id>http://localhost:4000/posts/1%EC%A3%BC%EC%B0%A8%ED%9A%8C%EA%B3%A0/</id>
-    <content src="http://localhost:4000/posts/1%EC%A3%BC%EC%B0%A8%ED%9A%8C%EA%B3%A0/" />
+    <id>http://localhost:4000/posts/1week/</id>
+    <content src="http://localhost:4000/posts/1week/" />
     <author>
-      <name>your_full_name</name>
+      <name>JunStiN</name>
     </author>
 
   
@@ -77,15 +77,15 @@
   
   <entry>
     <title>첫 블로그 글, 소개</title>
-    <link href="http://localhost:4000/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%86%8C%EA%B0%9C/" rel="alternate" type="text/html" title="첫 블로그 글, 소개" />
+    <link href="http://localhost:4000/posts/intro/" rel="alternate" type="text/html" title="첫 블로그 글, 소개" />
     <published>2023-11-17T23:09:22+09:00</published>
   
-    <updated>2023-11-19T22:37:23+09:00</updated>
+    <updated>2023-11-17T23:09:22+09:00</updated>
   
-    <id>http://localhost:4000/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%86%8C%EA%B0%9C/</id>
-    <content src="http://localhost:4000/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%86%8C%EA%B0%9C/" />
+    <id>http://localhost:4000/posts/intro/</id>
+    <content src="http://localhost:4000/posts/intro/" />
     <author>
-      <name>your_full_name</name>
+      <name>JunStiN</name>
     </author>
 
   
