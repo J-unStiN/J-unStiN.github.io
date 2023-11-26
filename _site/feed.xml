@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>JunStiN</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-11-27T00:46:12+09:00</updated>
+  <updated>2023-11-27T00:53:27+09:00</updated>
   <author>
     <name>JunStiN</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,73 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>한화시스템 BEYOND 캠프 3기 2주차 회고</title>
+    <link href="http://localhost:4000/posts/2week/" rel="alternate" type="text/html" title="한화시스템 BEYOND 캠프 3기 2주차 회고" />
+    <published>2023-11-26T23:37:00+09:00</published>
+  
+    <updated>2023-11-27T00:47:41+09:00</updated>
+  
+    <id>http://localhost:4000/posts/2week/</id>
+    <content src="http://localhost:4000/posts/2week/" />
+    <author>
+      <name>JunStiN</name>
+    </author>
+
+  
+    
+    <category term="한화시스템" />
+    
+    <category term="주차회고" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+한화시스템 BEYOND 캠프 3기 2주차 회고
+
+
+
+
+내용
+
+
+
+1. 전반적인 느낀 점 (일주일 동안 한 일)
+- 데이터베이스 설계 프로젝트를 위해 팀구성 + 자리 재배치가 이루어졌음.
+팀프로젝트는 학교 졸업이후로는 처음하는거라서 적응하는데 시간이 걸릴거같다...
+해당 팀이 끝까지 갈 지는 잘 모르겠지만,
+최선을 다해 원하는 결과를 얻을 수 있도록 최선을 다하자 !!
+
+
+
+
+2. 좋았던 점 (좋았거나 내가 잘했던 점)
+- 5층 도서관?에 원하는 책이 생겨서 바로 빌릴 수 있었다 ㅎ
+
+- 매니저님들이 수업과 공부에 집중할 수 있도록 환경을 조성해주는것에
+이 글을 통해서 큰 감사의 인사를 드립니다.
+
+
+
+
+3. 아쉬웠던 점
+- 시간이 지나감에 따라 다른 기수들도 팀프로젝트를 하러 윗층까지 올라오는데,
+...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
