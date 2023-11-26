@@ -273,7 +273,7 @@
     <a href="/" id="avatar" class="rounded-circle">
       
         
-        <img src="https://chirpy-img.netlify.app/commons/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
+        <img src="/commons/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
       
     </a>
 
@@ -582,6 +582,159 @@
 <div id="post-list" class="flex-grow-1 px-xl-1">
   
     <article class="card-wrapper card">
+      <a href="/posts/Java-Thread2/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">자바 Thread_2</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>
+                
+
+
+
+
+
+                왜, 언제 스레드를 멈춰야 하는가??
+
+  스레드는 아무것도 하지 않을때에도 리소스를 사용함.
+    
+      메모리와 커널 리소스
+      CPU 시간뿐아니라 캐시까지 사용 
+
+    
+  
+  생성한 스레드가 이미 작업을 완료했으면, 사용하지 않는 스레드의 리소스를 정리해야함.
+  스레드가 오작동을 해야하면 중지해야함 ! (응답없는데 서버에 ...
+              </p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1700748562"
+  data-df="ll"
+  
+>
+  Nov 23, 2023
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      자바,
+                      멀티스레딩
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/Java-Thread/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">자바 Thread_1</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>
+                
+
+
+
+
+
+                
+  왜 쓰레드가 필요한가??
+
+
+
+  반응성
+  성능
+
+
+
+  컨텍스트 스위치
+    
+      어플리케이션 각각의 인스턴스는 독립적으로 실행이 됨.
+      일반적으로는 코어의 개수보다 프로세스의 개수가 더 많고, 하나의 프로세스는 하나 이상의 쓰레드가 있음.
+그래서 OS는 스레드 하나를 실행하고, 멈추고 다시 실행하는것이 컨텍스트 스위치
+&amp;l...
+              </p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1700489362"
+  data-df="ll"
+  
+>
+  Nov 20, 2023
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      자바,
+                      멀티스레딩
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
       <a href="/posts/1week/" class="post-preview row g-0 flex-md-row-reverse">
         
 
@@ -603,7 +756,8 @@
 
 한화시스템 BEYOND 캠프 3기 1주차 회고
 
-&amp;lt;/br&amp;gt;
+
+
 
 내용
 
@@ -615,7 +769,8 @@
 그리고 교육장소까지 가는 시간도 40분이면 갈 수 있어서 위치적으로도 좋아서 마음에 든다.
 
 
-2. 좋았던 점 (좋았거나 ...
+2. 좋았던 점 (좋았거나 내가 잘했던 점)
+...
               </p>
             </div>
 
@@ -683,14 +838,21 @@
 
 Email - junstin119@gmail.com
 
+
+
 GitHub - https://github.com/J-unStiN
+
+
 
 소개 - https://junstin.notion.site/68e463fee882498cb424226dff3447ed?pvs=4
 
 
-  추후 꾸준하게 해당글을 수정하도록 약속함.
 
 
+
+  블로그, Github 위해 마크다운에 대한 글 작성하기
+  
+   ...
               </p>
             </div>
 
@@ -771,6 +933,20 @@ GitHub - https://github.com/J-unStiN
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/intro/">첫 블로그 글, 소개</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Java-Thread2/">자바 Thread_2</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/1week/">한화시스템 BEYOND 캠프 3기 1주차 회고</a>
         </li>
       
@@ -794,6 +970,25 @@ GitHub - https://github.com/J-unStiN
 
 
 
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
 
   
     
@@ -825,6 +1020,9 @@ GitHub - https://github.com/J-unStiN
   <section>
     <h2 class="panel-heading">Trending Tags</h2>
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">java</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/hanhwa/">hanhwa</a>
@@ -902,6 +1100,25 @@ GitHub - https://github.com/J-unStiN
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
         
         
@@ -927,6 +1144,9 @@ GitHub - https://github.com/J-unStiN
   <section>
     <h2 class="panel-heading">Trending Tags</h2>
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">java</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/hanhwa/">hanhwa</a>
