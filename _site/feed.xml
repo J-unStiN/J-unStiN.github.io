@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>JunStiN</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-11-27T00:53:27+09:00</updated>
+  <updated>2023-11-27T00:56:45+09:00</updated>
   <author>
     <name>JunStiN</name>
     <uri>http://localhost:4000/</uri>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>한화시스템 BEYOND 캠프 3기 2주차 회고</title>
-    <link href="http://localhost:4000/posts/2week/" rel="alternate" type="text/html" title="한화시스템 BEYOND 캠프 3기 2주차 회고" />
+    <link href="http://localhost:4000/posts/week2/" rel="alternate" type="text/html" title="한화시스템 BEYOND 캠프 3기 2주차 회고" />
     <published>2023-11-26T23:37:00+09:00</published>
   
-    <updated>2023-11-27T00:47:41+09:00</updated>
+    <updated>2023-11-26T23:37:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/2week/</id>
-    <content src="http://localhost:4000/posts/2week/" />
+    <id>http://localhost:4000/posts/week2/</id>
+    <content src="http://localhost:4000/posts/week2/" />
     <author>
       <name>JunStiN</name>
     </author>
@@ -210,13 +210,13 @@ Thread.interrupt()
   
   <entry>
     <title>한화시스템 BEYOND 캠프 3기 1주차 회고</title>
-    <link href="http://localhost:4000/posts/1week/" rel="alternate" type="text/html" title="한화시스템 BEYOND 캠프 3기 1주차 회고" />
+    <link href="http://localhost:4000/posts/week1/" rel="alternate" type="text/html" title="한화시스템 BEYOND 캠프 3기 1주차 회고" />
     <published>2023-11-19T12:00:00+09:00</published>
   
-    <updated>2023-11-27T00:27:01+09:00</updated>
+    <updated>2023-11-19T12:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/1week/</id>
-    <content src="http://localhost:4000/posts/1week/" />
+    <id>http://localhost:4000/posts/week1/</id>
+    <content src="http://localhost:4000/posts/week1/" />
     <author>
       <name>JunStiN</name>
     </author>
