@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>JunStiN</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-11-27T00:56:45+09:00</updated>
+  <updated>2023-11-28T21:08:13+09:00</updated>
   <author>
     <name>JunStiN</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,286 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>자바 질문 모음</title>
+    <link href="http://localhost:4000/posts/java_question/" rel="alternate" type="text/html" title="자바 질문 모음" />
+    <published>2023-11-28T18:30:22+09:00</published>
+  
+    <updated>2023-11-28T18:30:22+09:00</updated>
+  
+    <id>http://localhost:4000/posts/java_question/</id>
+    <content src="http://localhost:4000/posts/java_question/" />
+    <author>
+      <name>JunStiN</name>
+    </author>
+
+  
+    
+    <category term="자바" />
+    
+    <category term="질문" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      자바 질문 모음집 (계속 추가, 수정중)
+
+1. JVM이 무엇이고, 왜 플랫폼 독립적 언어인가?
+
+
+  
+    JVM 핵심은 컴파일이 된 바이트코드를 실행시켜주고 플랫폼 종속적 -&amp;gt; 이러한 이유로 크로스 플랫폼이 가능.
+
+    ## 자바 실행 원리
+    
+      소스 작성
+      컴파일
+      실행
+    
+  
+
+
+자바 코드로 작성된 .java 파일을 컴퓨터가 이해할 수 있는 언어로 바꿔야함. -&amp;gt; 이 작업이 컴파일이라고 하고 javac 라는 명령어이다. 
+.class 파일의 바이트코드가 생성되고 플랫폼에 맞춰서 클래스파일을 java라는 명령어로 실행하면 JVM이 플랫폼에 맞춰서 실행한다. 
+JVM은 OS에 종속적이다. (운영체제마다 맞는 JVM 설치해야함)
+JVM은 바이트...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>SW공학</title>
+    <link href="http://localhost:4000/posts/sw2/" rel="alternate" type="text/html" title="SW공학" />
+    <published>2023-11-28T15:35:22+09:00</published>
+  
+    <updated>2023-11-28T15:35:22+09:00</updated>
+  
+    <id>http://localhost:4000/posts/sw2/</id>
+    <content src="http://localhost:4000/posts/sw2/" />
+    <author>
+      <name>JunStiN</name>
+    </author>
+
+  
+    
+    <category term="개발" />
+    
+    <category term="SW공학" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      SW 공학 - GIT
+
+
+
+
+🌀Git
+
+  분산 버전 관리 시스템으로서, 소스 코드의 변경사항을 추적하는데 사용
+  로컬 시스템과 원격 시스템을 두어, 로컬에서 작업 후 원격공간과 동기화
+  주요 명령어에는 add, commit, push, merge, branch, checkout 등
+  브랜치(branch) 기능을 통해 여러 개발자가 동시에 개발하면서도 충돌 없이 작업
+  git은 리눅스 토르발즈에 의해 개발된 이후 오픈소스프로젝트에서 관리
+
+
+
+
+
+🌀Github
+
+  Github 소스코드가 온라인에서 관리되고 협업할 수 있는 플랫폼
+  즉, Github은 Git의 리포지토리를 온라인상에서 관리하기 위한 플랫폼
+  Github -&amp;gt; 마이크로소프트에서 인수
+
+
+
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>마크다운 내용 정리글</title>
+    <link href="http://localhost:4000/posts/Markdown/" rel="alternate" type="text/html" title="마크다운 내용 정리글" />
+    <published>2023-11-28T10:09:22+09:00</published>
+  
+    <updated>2023-11-28T10:09:22+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Markdown/</id>
+    <content src="http://localhost:4000/posts/Markdown/" />
+    <author>
+      <name>JunStiN</name>
+    </author>
+
+  
+    
+    <category term="개발" />
+    
+    <category term="마크다운" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      asdasd
+
+마크다운 작성을 위한 게시글
+
+
+
+
+  제목 Header
+
+
+H1은 ===로도 만들 수 있습니다.
+this h1 
+===
+
+
+H2는 —로도 만들 수 있습니다.
+this h2
+---
+
+
+
+
+제목 1
+제목 2
+제목 3
+제목 4
+제목 5
+제목 6
+
+
+  줄바꿈 (Line Breaks) .
+    
+      띄어쓰기 2번 또는 로 표현 가능 하다.
+    
+  
+  
+    수평선 (Horizontal Rule)
+  
+  
+    글자 강조 (Emphasis)
+  
+  
+    인용문 (BlockQuote)
+  
+  
+    목록 (List)
+  
+  
+    체크리스트
+  
+  
+    코드블럭
+  
+  
+    링크 (Links)
+  
+  
+    이미지 (Images)
+  
+  
+    ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>SW공학</title>
+    <link href="http://localhost:4000/posts/sw/" rel="alternate" type="text/html" title="SW공학" />
+    <published>2023-11-28T09:09:22+09:00</published>
+  
+    <updated>2023-11-28T09:09:22+09:00</updated>
+  
+    <id>http://localhost:4000/posts/sw/</id>
+    <content src="http://localhost:4000/posts/sw/" />
+    <author>
+      <name>JunStiN</name>
+    </author>
+
+  
+    
+    <category term="개발" />
+    
+    <category term="SW공학" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      SW 공학
+
+
+
+
+
+  
+    소프트웨어 공학은 인류의 이익을 위해서 소프트웨어와 관련된 원리, 지식, 도구등을 활용하여 새로운 제품, 도구등을 만드는 것
+  
+  계획, 요구사항 분석, 설계, 구현, 시험, 및 유지보수과정(폭포수모델)
+  프로젝트 계획
+    
+      문제 정의 (무엇을 개발할지)
+      법적, 경제적, 기술적 타당성 조사
+      일정 계획
+        
+          WBS(Work Breakdown Structure) 대표적
+          작업 분할 구조도
+          프로젝트 목표를 달성하기 위해 필요한 활동과 업무를 세분화하는 작업
+          수행사 및 담당자까지 지정
+        
+      
+    
+  
+
+
+
+
+
+  프로젝트 계획
+  ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -80,243 +360,6 @@
 3. 아쉬웠던 점
 - 시간이 지나감에 따라 다른 기수들도 팀프로젝트를 하러 윗층까지 올라오는데,
 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>자바 Thread_2</title>
-    <link href="http://localhost:4000/posts/Java-Thread2/" rel="alternate" type="text/html" title="자바 Thread_2" />
-    <published>2023-11-23T23:09:22+09:00</published>
-  
-    <updated>2023-11-27T00:11:30+09:00</updated>
-  
-    <id>http://localhost:4000/posts/Java-Thread2/</id>
-    <content src="http://localhost:4000/posts/Java-Thread2/" />
-    <author>
-      <name>JunStiN</name>
-    </author>
-
-  
-    
-    <category term="자바" />
-    
-    <category term="멀티스레딩" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      왜, 언제 스레드를 멈춰야 하는가??
-
-  스레드는 아무것도 하지 않을때에도 리소스를 사용함.
-    
-      메모리와 커널 리소스
-      CPU 시간뿐아니라 캐시까지 사용 
-
-    
-  
-  생성한 스레드가 이미 작업을 완료했으면, 사용하지 않는 스레드의 리소스를 정리해야함.
-  스레드가 오작동을 해야하면 중지해야함 ! (응답없는데 서버에 요청)
-  애플리케이션 전체를 중단하기 위해서임 !
-(최소 하나의 스레드만 실행되고 있어도 프로세스는 종료되지않음)
-
-
-
-
-
-
-
-
-Thread.interrupt()
--&amp;gt; 각 스레드는 인터럭트 메서드를 가지고 있음
-
-  우리가 인터럽트하려는 스레드가 인터럽트 당했을 때 익셉션을 발생시키는 경우 !
-  이터럽트하려는 스레드가 신호를 명시적으로 처리하기 위...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>자바 Thread_1</title>
-    <link href="http://localhost:4000/posts/Java-Thread/" rel="alternate" type="text/html" title="자바 Thread_1" />
-    <published>2023-11-20T23:09:22+09:00</published>
-  
-    <updated>2023-11-20T23:09:22+09:00</updated>
-  
-    <id>http://localhost:4000/posts/Java-Thread/</id>
-    <content src="http://localhost:4000/posts/Java-Thread/" />
-    <author>
-      <name>JunStiN</name>
-    </author>
-
-  
-    
-    <category term="자바" />
-    
-    <category term="멀티스레딩" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-  왜 쓰레드가 필요한가??
-
-
-
-  반응성
-  성능
-
-
-
-  컨텍스트 스위치
-    
-      어플리케이션 각각의 인스턴스는 독립적으로 실행이 됨.
-      일반적으로는 코어의 개수보다 프로세스의 개수가 더 많고, 하나의 프로세스는 하나 이상의 쓰레드가 있음.
-그래서 OS는 스레드 하나를 실행하고, 멈추고 다시 실행하는것이 컨텍스트 스위치
-&amp;lt;/br&amp;gt; 
-&amp;lt;/br&amp;gt; 
-&amp;lt;/br&amp;gt;
-        
-          컨텍스트 스위치
-        
-      
-    
-    
-      동시에 많은 스레드를 다룰 때는 효율성이 떨어지기에 이 개념이 아주 중요함 !
-      사람으로 생각하면 생각을 가다듬고, 집중력을 회복하는 시간 ! (회사에서 많은 업무를 동시에 못하...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>한화시스템 BEYOND 캠프 3기 1주차 회고</title>
-    <link href="http://localhost:4000/posts/week1/" rel="alternate" type="text/html" title="한화시스템 BEYOND 캠프 3기 1주차 회고" />
-    <published>2023-11-19T12:00:00+09:00</published>
-  
-    <updated>2023-11-19T12:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/week1/</id>
-    <content src="http://localhost:4000/posts/week1/" />
-    <author>
-      <name>JunStiN</name>
-    </author>
-
-  
-    
-    <category term="한화시스템" />
-    
-    <category term="주차회고" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-
-한화시스템 BEYOND 캠프 3기 1주차 회고
-
-
-
-
-내용
-
-
-
-1. 전반적인 느낀 점 (일주일 동안 한 일)
-- 지금까지 7시 출근 - 4시 퇴근을 한 입장해서 
-  9시출근 - 6시퇴근이라는게 가장 좋다.
-그리고 교육장소까지 가는 시간도 40분이면 갈 수 있어서 위치적으로도 좋아서 마음에 든다.
-
-
-2. 좋았던 점 (좋았거나 내가 잘했던 점)
-- 강사님이 스타트업 리드, 팀장 경험이 있었다는 점.  
-국비는 강사의 역량이 절반이상이라도 들었는데, 적어도 인터넷에서 본 이상한 강사님이 아니라서 좋았다.  
-- 커리큘럼을 봤을때 생각보다 탄탄했다. (CI/CD까지 하는 곳은 잘 못본거같은데, 거기다가 Action!!)  
-- 생각보다 건물 안이 깨끗했고 원두커피를 아침, 점심, 저녁마다 먹을 수 있...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>첫 블로그 글, 소개</title>
-    <link href="http://localhost:4000/posts/intro/" rel="alternate" type="text/html" title="첫 블로그 글, 소개" />
-    <published>2023-11-17T23:09:22+09:00</published>
-  
-    <updated>2023-11-27T00:11:30+09:00</updated>
-  
-    <id>http://localhost:4000/posts/intro/</id>
-    <content src="http://localhost:4000/posts/intro/" />
-    <author>
-      <name>JunStiN</name>
-    </author>
-
-  
-    
-    <category term="일상" />
-    
-    <category term="소개" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      블로그 첫 글
-
-Email - junstin119@gmail.com
-
-
-
-GitHub - https://github.com/J-unStiN
-
-
-
-소개 - https://junstin.notion.site/68e463fee882498cb424226dff3447ed?pvs=4
-
-
-
-
-
-  블로그, Github 위해 마크다운에 대한 글 작성하기
-  
-    자바를 처음사용하는만큼 자바에 대해 필요한 부분들 정리
-  
-  추후 꾸준하게 해당글을 수정하도록 약속함.
-
-
     </summary>
   
 
