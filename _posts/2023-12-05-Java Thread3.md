@@ -1,5 +1,5 @@
 ---
-title : 자바 Thread_3 (수정중)
+title : 자바 Thread_3
 date : 2023-12-05 10:09:22 +09:00
 categories : [자바, 멀티스레딩]
 tags : [java] #소문자만 가능
