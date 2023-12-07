@@ -139,6 +139,7 @@ private static class InvertoryCounter {
     }
 ```
 - 하나의 스레드가 접근하면 다른 스레드는 접근자체가 안됨.
+- 인스턴스(객체)를 기준으로 동기화가 걸림
 => Thread A가 메서드를 실행하면 다른 메서드는 모두 실행할 수 가 없음.
 
 <br> <br>
