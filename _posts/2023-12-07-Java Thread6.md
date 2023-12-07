@@ -8,7 +8,7 @@ tags : [java] #소문자만 가능
 <br> <br>
 
 # 락킹
-- 멀티스레드 애플리케이션을 제작할 때 **Fine-Grained(세밀한 락킹)**, **Coarse-Grained(성긴 락킹)**을 선택할 수 있음.
+- 멀티스레드 애플리케이션을 제작할 때 **Fine-Grained(세밀한 락킹)**, **Coarse-Grained(성긴 락킹)** 을 선택할 수 있음.
 
 - Coarse-Grained
   - 단일 락킹만 신경쓰면 된다
