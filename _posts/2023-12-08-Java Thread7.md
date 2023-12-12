@@ -79,3 +79,195 @@ if(lockObject.tryLock());
   - lock 객체를 테스트하기 위한 쿼리 메서드가 주요한 기능
   - lockInterruptibly() 으로 인터럽트
   - tryLock()
+
+
+
+---
+
+
+<br> <br> <br>
+
+
+
+# ReentrantReadWriteLock
+
+- ReadLock, WriteLock을 합쳐서 하나의 락으로 만든 것
+
+<br>
+
+### 경쟁상태
+- 리소스를 공유하는 스레드가 다양함
+- 하나의 스레드는 리소스를 수정함 
+
+### 해결방법은 상호배제
+- 스레드가 공유 리소스를 읽기, 쓰기, 둘다해도 상관없음
+- 임계영역을 통해 스레드 하나만 실행가능함
+  
+- 지금까지의 락은 스레드 여러개가 공유 리소스에 접근하는 것을 막음
+- 읽기작업이 빠르고, 락이 경쟁상태를 막는 일도 거의 발생하지않음
+
+<br>
+
+## 만약 캐시처럼 읽기작업을 주로 하거나, 읽기작업이 느릴경우??
+  1. 변수를 여러개 읽기 작업하기 !
+  2. 데이터 구조가 복합하면 작업이 느려짐
+- 읽기 작업을 주로 하는 스레드 여러개가 공유 자원을 읽는 것을 막으면 성능 저하가 생김.
+  
+<br><br>
+
+## 그래서 ReentrantReadWriteLock 사용 !!!
+- 락 기능을 제공하지않음 -> 쿼리메서드 !
+- 내부 락이 두개 있는데, 읽기락(readLock)과 쓰기락(writeLock)이 있음
+- 쓰기락을 통해 스레드가 임계영역에 접근하는 것을 막고 해당 영역에서 공유 리소스를 수정함
+- 공유 리소스를 읽는 작업만 하려면 읽기락을 사용해 임계 영역을 보호하고 작업이 완료되면 락을 해제함 => 읽기 스레드들이 읽기락을 건 임계영역에 여러개 접근이 가능함
+- 읽기락, 쓰기락은 서로 차단하는 것도 가능함
+만약 어떤 스레드가 쓰기락을 얻으면 해당락이 풀릴때까지 다른 스레드는 읽기 락을 얻을 수 없음. (반대의 상황도 가능함)
+
+<br>
+
+```java
+
+    public static final int HIGHET_PRICE = 1000;
+
+    public static void main(String[] args) throws InterruptedException {
+        InvertoryDatabase invertoryDatabase = new InvertoryDatabase();
+
+        Random random = new Random();
+        for (int i = 0; i < 100000; i++) {
+            invertoryDatabase.addItem(random.nextInt(HIGHET_PRICE));
+        }
+
+        Thread writer = new Thread( () -> {
+           while (true) {
+               invertoryDatabase.addItem(random.nextInt(HIGHET_PRICE));
+               invertoryDatabase.removeItem(random.nextInt(HIGHET_PRICE));
+
+               try{
+                   Thread.sleep(10);
+               }catch (Exception e) {
+               }
+           }
+        });
+
+        writer.setDaemon(true);
+        writer.start();
+
+        int nuberTreadTheads = 7;
+        List<Thread> readers = new ArrayList<>();
+
+        for (int i = 0; i < nuberTreadTheads; i++) {
+            Thread reader = new Thread(() -> {
+                for (int j = 0; j < 100000; j++) {
+                    int upperBoundPrice = random.nextInt(HIGHET_PRICE);
+                    int lowerBoundPrice = upperBoundPrice > 0 ? random.nextInt(upperBoundPrice) : 0;
+                    invertoryDatabase.getNumberOfItemInPriceRange(lowerBoundPrice, upperBoundPrice);
+                }
+            });
+
+            //reader.setDaemon(true);
+            readers.add(reader);
+        }
+
+        long start = System.currentTimeMillis();
+
+        for (Thread reader : readers) {
+            reader.start();
+        }
+
+        for (Thread reader : readers) {
+            reader.join();
+        }
+
+
+        long end = System.currentTimeMillis();
+
+        System.out.println(end - start);
+
+    }
+
+
+    public static class InvertoryDatabase {
+        // 레드 블랙 트리
+        private TreeMap<Integer, Integer> priceToCountMap = new TreeMap<>();
+        // 기존 락
+        private ReentrantLock lock = new ReentrantLock();
+
+        // 읽기 쓰기 락
+        private ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
+        // 읽기 락
+        private Lock readLock = reentrantReadWriteLock.readLock();
+        // 쓰기 락
+        private Lock writeLock = reentrantReadWriteLock.writeLock();
+
+        public int getNumberOfItemInPriceRange(int loverBound, int upperBound) {
+            // 읽기부분 락
+            //lock.lock();
+            readLock.lock();
+            try {
+                Integer fromKey = priceToCountMap.ceilingKey(loverBound);
+                Integer toKey = priceToCountMap.ceilingKey(upperBound);
+
+                if (fromKey == null || toKey == null) {
+                    return 0;
+                }
+
+                NavigableMap<Integer, Integer> rangeOfPrices =
+                        priceToCountMap.subMap(fromKey, true, toKey, true);
+
+                int sum = 0;
+
+                for (int numberOfItemForPrice : rangeOfPrices.values()) {
+                    sum += numberOfItemForPrice;
+                }
+
+                return sum;
+            } finally {
+                //lock.unlock();
+                readLock.unlock();
+            }
+        }
+
+
+        public void addItem(int price) {
+            // 쓰기부분 락
+            //lock.lock();
+            writeLock.lock();
+            try {
+                Integer itemForPrice = priceToCountMap.get(price);
+
+                if (itemForPrice == null) {
+                    priceToCountMap.put(price, 1);
+                } else {
+                    priceToCountMap.put(price, itemForPrice + 1);
+                }
+            } finally {
+                //lock.unlock();
+                writeLock.unlock();
+            }
+        }
+
+        public void removeItem(int price) {
+            // 쓰기부분 락
+            //lock.lock();
+            writeLock.lock();
+            try {
+                Integer itemForPrice = priceToCountMap.get(price);
+
+                if (itemForPrice == null || itemForPrice == 1) {
+                    priceToCountMap.remove(price);
+                } else {
+                    priceToCountMap.put(price, itemForPrice - 1);
+                }
+            } finally {
+                //lock.unlock();
+                writeLock.unlock();
+            }
+        }
+    }
+
+```
+
+- 기존 락에서는 다수의 Reader스레드가 공유 리소스에 접속하지못했음
+- 읽기쓰기락을 통해 읽기부분의 락을 여러개 얻고 읽음 
+- 성능차이는 3~4배차이남 (위 코드기준 - 하드웨어 성능에 따라 다름)
+- 읽기 작업만 실행하지 않는 곳에서는 일반적인 락보다 읽기쓰기 락의 효율성이 더 좋음
