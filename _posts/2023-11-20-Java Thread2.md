@@ -133,4 +133,11 @@ tags : [java] #소문자만 가능
 
 ### Thread join
   - 스레드는 각각 독립적이고 실행순서를 우리가 통제할 수 없다.
-  - 
+
+
+
+<br>
+
+출처 - https://kmooc.udemy.com/course/java-multi-threading/ 
+(Java 멀티스레딩, 병행성 및 성능 최적화 - 전문가 되기
+)

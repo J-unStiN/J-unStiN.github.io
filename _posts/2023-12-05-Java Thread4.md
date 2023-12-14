@@ -176,3 +176,9 @@ private static class InvertoryCounter {
 - 동기화 블록이나 메서드는 Reentrant 즉, 재진입할 수 있는 요소
 - 스레드1이 이미 다른 동기화 메서드나 블록에 있는 상태에서 또 동기화 메서드에 액세스하면 별 문제 없이 그 동기화 메서드에 액세를 할 수 있게됨.
 - 기본적으로는 스레드가 임계영역에 접근하는 것 자체를 막을 순 없음
+
+<br>
+
+출처 - https://kmooc.udemy.com/course/java-multi-threading/ 
+(Java 멀티스레딩, 병행성 및 성능 최적화 - 전문가 되기
+)

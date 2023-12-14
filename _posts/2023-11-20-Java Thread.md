@@ -219,3 +219,7 @@ public static final int MAX_PASSWORD = 9999;
 <br> => 각 스레드에 대한 동적 우선 순위를 유지해 인터랙티브 스레드를 우선시하고 시스템의 특정 스레드가 기아 상태가 되는 것을 방지하는것이 모든 OS의 목표 (스케줄링 스레드에 대한 알고리즘은 OS마다 다름)
 <br>
 <br>
+
+출처 - https://kmooc.udemy.com/course/java-multi-threading/ 
+(Java 멀티스레딩, 병행성 및 성능 최적화 - 전문가 되기
+)

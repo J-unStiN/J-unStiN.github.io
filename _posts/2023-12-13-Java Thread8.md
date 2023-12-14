@@ -132,3 +132,9 @@ public class mainClass {
 // 현재 객체만을 사용할거면 함수 synchronized 선언가능
 
 ```
+
+<br>
+
+출처 - https://kmooc.udemy.com/course/java-multi-threading/ 
+(Java 멀티스레딩, 병행성 및 성능 최적화 - 전문가 되기
+)
