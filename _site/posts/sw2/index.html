@@ -35,25 +35,25 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="SW공학" />
+<meta property="og:title" content="SW공학_2" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="SW 공학 - GIT" />
-<meta property="og:description" content="SW 공학 - GIT" />
+<meta name="description" content="asd" />
+<meta property="og:description" content="asd" />
 <link rel="canonical" href="http://localhost:4000/posts/sw2/" />
 <meta property="og:url" content="http://localhost:4000/posts/sw2/" />
 <meta property="og:site_name" content="JunStiN" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-11-28T15:35:22+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="SW공학" />
+<meta property="twitter:title" content="SW공학_2" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-28T15:35:22+09:00","datePublished":"2023-11-28T15:35:22+09:00","description":"SW 공학 - GIT","headline":"SW공학","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/sw2/"},"url":"http://localhost:4000/posts/sw2/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-30T21:24:32+09:00","datePublished":"2023-11-28T15:35:22+09:00","description":"asd","headline":"SW공학_2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/sw2/"},"url":"http://localhost:4000/posts/sw2/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>SW공학 | JunStiN
+  <title>SW공학_2 | JunStiN
   </title>
 
   <!--
@@ -468,7 +468,7 @@
         
           
             
-              <span>SW공학</span>
+              <span>SW공학_2</span>
             
 
           
@@ -580,6 +580,116 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -609,7 +719,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>SW공학</h1>
+    <h1 data-toc-skip>SW공학_2</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -637,6 +747,29 @@
       </span>
 
       <!-- lastmod date -->
+      
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1701347072"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Nov 30, 2023
+</time>
+
+        </span>
       
 
       
@@ -676,9 +809,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="204 words"
+  title="1805 words"
 >
-  <em>1 min</em> read</span>
+  <em>10 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -687,7 +820,9 @@
   </header>
 
   <div class="content">
-    <h1 id="sw-공학---git">SW 공학 - GIT</h1>
+    <p>asd</p>
+
+<h1 id="sw-공학---git">SW 공학 - GIT</h1>
 
 <p><br />
 <br /></p>
@@ -713,6 +848,350 @@
 
 <p><br /></p>
 
+<ul>
+  <li>oauth 토근 + 클론 (private repo)
+    <ul>
+      <li>git clone https://토큰정보:x-oauth-basic@git주소</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="git-프로젝트-생성-및-수정절차"><span class="me-2">Git 프로젝트 생성 및 수정절차</span><a href="#git-프로젝트-생성-및-수정절차" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>신규 프로젝트 생성시
+    <ul>
+      <li>방법1
+        <ul>
+          <li>git clone 레포주소</li>
+          <li>
+            <p>해당 폴더로 이동해서 작업 시작</p>
+
+            <p><br /></p>
+          </li>
+        </ul>
+      </li>
+      <li>방법2
+        <ul>
+          <li>로컬 컴퓨터에서부터 이미 개발된 프로젝트가 존재시</li>
+          <li>git init
+            <ul>
+              <li>.git 컴파일 생성</li>
+              <li>.git 폴더가 위치한 곳에서 git config –list를 통해 컨피그 정보 조회</li>
+            </ul>
+          </li>
+          <li>git remote add origin 레포주소
+            <ul>
+              <li>origin이란, 깃허브 저장소 주소를 의미(원격저장소)</li>
+            </ul>
+          </li>
+          <li>git remote set url origin
+            <ul>
+              <li>url변경후 main에 push하면 main의 커밋 이력과 함께 업로드</li>
+            </ul>
+          </li>
+          <li>git remote remove origin</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+  <li>모든 이력 push
+    <ul>
+      <li>git push -all origin
+        <ul>
+          <li>모든 브렌치의 커밋이력 push</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="github-사용자-지정"><span class="me-2">github 사용자 지정</span><a href="#github-사용자-지정" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>사용자 지정은 사용자 인증과 상관없이 자유롭게 가능</li>
+  <li>전역적 선언
+    <ul>
+      <li>git config –global user.name 깃허브아이디</li>
+      <li>git config –global user.email 깃허브이메일</li>
+      <li>홈 디렉터리 .gitconfig 저장</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+  <li>지역적 선언
+    <ul>
+      <li>git config –local 으로 선언</li>
+      <li>.git/config 저장</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /><br /></p>
+
+<h2 id="git-기본-명령어"><span class="me-2">git 기본 명령어</span><a href="#git-기본-명령어" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>git status
+    <ul>
+      <li>현재 작업 디텍터리와 스테이징 에어리어 상태를 보여줌</li>
+    </ul>
+  </li>
+  <li>git add
+    <ul>
+      <li>staging area로 업로드</li>
+      <li>git status로 확인</li>
+    </ul>
+  </li>
+  <li>git commit -m “first commit”
+    <ul>
+      <li>local repo 업로드 및 커밋이력 생성</li>
+      <li>git commit -m “제목” -m “내용”</li>
+      <li>git log로 이력 확인</li>
+      <li>git commit만 치면 메시지 입력모드로 전환되고, 첫줄 제목 + 두번째 줄 부터 내용</li>
+    </ul>
+  </li>
+  <li>git commit -am “메시지”
+    <ul>
+      <li>add와 커밋을 동시에</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="git-pull-과-충돌"><span class="me-2">git pull 과 충돌</span><a href="#git-pull-과-충돌" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ul>
+  <li>수정후 수정사항 업로드
+    <ul>
+      <li>add, commit, push</li>
+    </ul>
+  </li>
+  <li>origin이 수정되어 로컬과의 차이 발생시
+    <ul>
+      <li>origin의 변경사항은 로컬에서는 추적 불가능 -&gt; 소스 컨트롤의 변경사항 인지는 로컬 레포지토리에 대한 변경인지</li>
+    </ul>
+  </li>
+  <li>git pull origin main
+    <ul>
+      <li>origin을 기준으로 로컬을 업데이트</li>
+      <li>pull은 working 디덱터리까지 반영</li>
+      <li>별도의 브랜치명 명시 안하면 현재 체크아웃 된 브랜치에서 pull</li>
+      <li>git pull origin main(브랜치명)</li>
+      <li>만약 로컬의 변경파일과 origin의 변경파일이 같이 변경되면 충돌발생 가능성</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="git-취소-상황"><span class="me-2">git 취소 상황</span><a href="#git-취소-상황" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>특정 스탭까지의 저장 사항을 취소
+    <ul>
+      <li>woring dir 수정사항 취소</li>
+      <li>add 후 취소</li>
+      <li>commit 이후 취소</li>
+      <li>push 후 origin까지 배포된 사항 취소</li>
+    </ul>
+  </li>
+  <li>working dir 의 수정사항 취소
+    <ul>
+      <li>git checkout
+        <ul>
+          <li>파일 수정사항의 취소</li>
+        </ul>
+      </li>
+      <li>git clean -fdx
+        <ul>
+          <li>파일을 신규추가 한 경우의 취소</li>
+        </ul>
+      </li>
+      <li>git checkout . &amp;&amp; git clean -fdx
+        <ul>
+          <li>수정 및 추가 모두 취소</li>
+        </ul>
+      </li>
+      <li>개발IDE 사용시 쉽게 수정사항 취소 가능</li>
+      <li>add 이후 취소
+        <ul>
+          <li>text2.txt 신규 생성</li>
+          <li>git status -&gt; untracked file</li>
+          <li>git add . -&gt; git status -&gt; Changes to be commited</li>
+          <li>git add 취소
+            <ul>
+              <li>git reset 또는 git restore -staged</li>
+            </ul>
+          </li>
+          <li>commit 이후 취소
+            <ul>
+              <li>git reset HEAD^
+                <ul>
+                  <li>unstged 상태로 만듬</li>
+                </ul>
+              </li>
+              <li>git reset –soft HEAD~1
+                <ul>
+                  <li>stged 상태 유지</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>push 후 origin까지 배포된 사항 취소
+            <ul>
+              <li>git revert 커밋id</li>
+              <li>특정 커밋버전을 취소시키는 새로운 commit을 생성 후에 다시 push</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="git-diff-와-fetch"><span class="me-2">git diff 와 fetch</span><a href="#git-diff-와-fetch" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>git diff
+    <ul>
+      <li>현재 작업 디텍터리와 스테이징 영역 사이의 차이점</li>
+    </ul>
+  </li>
+  <li>git diff commmit1 commmit2
+    <ul>
+      <li>두 커밋간 차이점 비교</li>
+      <li>commmit1 기준으로 commit2와의 비교시 차이점 출력</li>
+    </ul>
+  </li>
+  <li>git diff main origin/main
+    <ul>
+      <li>로컬 레포지터리의 메인과 오리진 메인과의 비교</li>
+    </ul>
+  </li>
+  <li>git fetch origin main
+    <ul>
+      <li>현재 체크아웃 되어있는 main과 origin main과의 차이가 있을 경우 차이점을 담은 참조데이터 fetch_head라는 곳에 생성</li>
+      <li>차이점을 참고하여 일단 merge 후에 파일수정하고 다시 push</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="git-stash"><span class="me-2">git stash</span><a href="#git-stash" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>작업 중단 변경사항을 임시로 저장하고 나중에 다시 적용할 수 있게 해주는 명령어</li>
+  <li>git stash init
+    <ul>
+      <li>작업저장 목록</li>
+    </ul>
+  </li>
+  <li>git stash show 인덱스
+    <ul>
+      <li>복사본 내용 조회</li>
+    </ul>
+  </li>
+  <li>git stash pop
+    <ul>
+      <li>작업목록에서 제거하면서 저장사항 적용</li>
+    </ul>
+  </li>
+  <li>git stash apply
+    <ul>
+      <li>작업목록에서 유지하면서 적용</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="git-tag"><span class="me-2">git tag</span><a href="#git-tag" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>mian브랜치에서 tag를 붙여 버전을 명시하고, release 할 때 아래와 같이 tag를 붙인뒤 push</li>
+  <li>release에는 소스코드가 압축파일로 생성</li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+  <li>관련 명령어
+    <ul>
+      <li>git tag 버전명</li>
+      <li>git push origin 버전명</li>
+      <li>add, commit, push 와는 별도로 진행</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="feature-branch-작업"><span class="me-2">feature branch 작업</span><a href="#feature-branch-작업" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>실제 현업에서 branch1, branch1, dev, main 등 여러 브랜치로 관리
+    <ul>
+      <li>브랜치란 버전과는 다르게 개발의 경로를 의미</li>
+      <li>일반적으로 production 관련 브랜치는 main, 개발용 브랜치는 dev</li>
+      <li>나머지는 task별로 기능별로 개별적으로 만들어 사용 -&gt; feature브랜치라 정함</li>
+      <li>feature 브랜치에서 작업 후 origin/feature로 푸쉬</li>
+      <li>Pull Request를 통해 dev까지 merge</li>
+      <li>dev에서 main으로 최종 merge</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+  <li>주요 명령어
+    <ul>
+      <li>git fetch origin
+        <ul>
+          <li>모든 브랜치 정보 fetch</li>
+        </ul>
+      </li>
+      <li>git branch
+        <ul>
+          <li>현재 저장소에 있는 모든 브랜치 목록</li>
+        </ul>
+      </li>
+      <li>git branch 브랜치명
+        <ul>
+          <li>브랜치명으로 새로운 브랜치를 생성하는 명령어</li>
+          <li>기존에 checkout 되어 있는 브랜치를 기준으로</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="merge-전략"><span class="me-2">merge 전략</span><a href="#merge-전략" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>
+    <p>브랜치에서 dev로 PR을 만든 뒤 merge하는 상황</p>
+  </li>
+  <li>
+    <p>merge / rebase / squash</p>
+    <ul>
+      <li>merge
+        <ul>
+          <li>merge 두 브랜치의 변경 사항을 통합하는 기본적인 방법</li>
+          <li>branch1에서 넘어온 커밋ID와 신규 머지 커밋ID가 dev에 남게 됨</li>
+        </ul>
+      </li>
+      <li>rebase
+        <ul>
+          <li>한 브랜치의 커밋을 다른 브랜치의 최신 커밋에 “재적용”하는 방식</li>
+          <li>이때에는 브랜치에서 넘어온 커밋ID가 아닌, 새로운 커밋ID가 발급되어 dev브랜치 생성</li>
+          <li>merge 커밋ID 남지 않게 되어, 깔끔한 커밋관리가 되나 이후에 branch1에서 다시 merge를 할 때 충돌이 발생하므로, 사용하던 branch1은 더이상 사용이 어려움.</li>
+        </ul>
+      </li>
+      <li>squash
+        <ul>
+          <li>squash는 여러 커밋을 하나의 커밋으로 합치는 과정</li>
+          <li>local repository에서 여러 커밋을 발생시켰을 때 해당 커밋ID를 통합하여 하나의 커밋ID만들어 dev에는 하나의 커밋ID로만 이력 생성</li>
+        </ul>
+      </li>
+      <li>rebase, squash는 feachre에서 dev브랜치로 merge할때에는 선택에 따라 가능하나, dev에서 main에 merge할때는 부적절</li>
+    </ul>
+  </li>
+</ul>
 
   </div>
 
@@ -771,21 +1250,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=SW%EA%B3%B5%ED%95%99%20-%20JunStiN&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fsw2%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=SW%EA%B3%B5%ED%95%99_2%20-%20JunStiN&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fsw2%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=SW%EA%B3%B5%ED%95%99%20-%20JunStiN&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fsw2%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=SW%EA%B3%B5%ED%95%99_2%20-%20JunStiN&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fsw2%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fsw2%2F&text=SW%EA%B3%B5%ED%95%99%20-%20JunStiN" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fsw2%2F&text=SW%EA%B3%B5%ED%95%99_2%20-%20JunStiN" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -840,14 +1319,35 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/intro/">첫 블로그 글, 소개</a>
+          <a href="/posts/network01/">네트워크1 - google.com</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Java-Thread2/">자바 Thread_2</a>
+          <a href="/posts/week5/">한화시스템 BEYOND 캠프 3기 5주차 회고</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Java-Thread9/">자바 Thread_9</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Java-Thread11/">자바 Thread_11</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Java-Thread8/">자바 Thread_8</a>
         </li>
       
     </ul>
@@ -904,7 +1404,15 @@
     
     
     
-      
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -960,6 +1468,79 @@
     
     
     
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -990,6 +1571,12 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/markdown/">markdown</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/spring/">spring</a>
       
     </div>
   </section>
@@ -1040,6 +1627,30 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -1103,7 +1714,7 @@
   Nov 28, 2023
 </time>
 
-              <h4 class="pt-0 my-2">SW공학</h4>
+              <h4 class="pt-0 my-2">SW공학_1</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1152,7 +1763,7 @@
   Nov 28, 2023
 </time>
 
-              <h4 class="pt-0 my-2">마크다운 내용 정리글</h4>
+              <h4 class="pt-0 my-2">마크다운 내용 정리글(수정중)</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1200,6 +1811,59 @@ this h2
           </a>
         </article>
       
+        <article class="col">
+          <a href="/posts/Spring1/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1701860400"
+  data-df="ll"
+  
+>
+  Dec  6, 2023
+</time>
+
+              <h4 class="pt-0 my-2">스프링 1 (추가중)</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                    
+
+
+- 필자는 진짜 웹이 처음이고, 스프링도 살면서 처음하기에
+아주 쉬운 내용으로, 경우에 따라 추상적인 내용으로 글을 적을 순 있음.
+
+
+  
+
+# 웹이란?
+
+- 인터넷 : 전세계의 모든 네트워크를 묶는 연결망
+- 웹 : 전세계의 인터넷에 어딘가에 있는 특정 공간
+- HTTP : 인터넷 안에서 웹 공간을 찾아 가기위한 역할
+
+   
+
+# 백엔드...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
     </nav>
   </aside>
   <!-- #related-posts -->
@@ -1219,7 +1883,7 @@ this h2
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>마크다운 내용 정리글</p>
+      <p>마크다운 내용 정리글(수정중)</p>
     </a>
   
 
@@ -1229,7 +1893,7 @@ this h2
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>자바 질문 모음</p>
+      <p>자바 질문 모음(추가,수정중)</p>
     </a>
   
 </nav>
@@ -1324,7 +1988,15 @@ this h2
     
     
     
-      
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1380,6 +2052,79 @@ this h2
     
     
     
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -1410,6 +2155,12 @@ this h2
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/markdown/">markdown</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/spring/">spring</a>
       
     </div>
   </section>

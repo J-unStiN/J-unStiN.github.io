@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>JunStiN</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-11-28T21:08:13+09:00</updated>
+  <updated>2023-12-19T20:24:36+09:00</updated>
   <author>
     <name>JunStiN</name>
     <uri>http://localhost:4000/</uri>
@@ -20,70 +20,14 @@
 
   
   <entry>
-    <title>자바 질문 모음</title>
-    <link href="http://localhost:4000/posts/java_question/" rel="alternate" type="text/html" title="자바 질문 모음" />
-    <published>2023-11-28T18:30:22+09:00</published>
+    <title>네트워크1 - google.com</title>
+    <link href="http://localhost:4000/posts/network01/" rel="alternate" type="text/html" title="네트워크1 - google.com" />
+    <published>2023-12-19T19:37:00+09:00</published>
   
-    <updated>2023-11-28T18:30:22+09:00</updated>
+    <updated>2023-12-19T20:20:47+09:00</updated>
   
-    <id>http://localhost:4000/posts/java_question/</id>
-    <content src="http://localhost:4000/posts/java_question/" />
-    <author>
-      <name>JunStiN</name>
-    </author>
-
-  
-    
-    <category term="자바" />
-    
-    <category term="질문" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      자바 질문 모음집 (계속 추가, 수정중)
-
-1. JVM이 무엇이고, 왜 플랫폼 독립적 언어인가?
-
-
-  
-    JVM 핵심은 컴파일이 된 바이트코드를 실행시켜주고 플랫폼 종속적 -&amp;gt; 이러한 이유로 크로스 플랫폼이 가능.
-
-    ## 자바 실행 원리
-    
-      소스 작성
-      컴파일
-      실행
-    
-  
-
-
-자바 코드로 작성된 .java 파일을 컴퓨터가 이해할 수 있는 언어로 바꿔야함. -&amp;gt; 이 작업이 컴파일이라고 하고 javac 라는 명령어이다. 
-.class 파일의 바이트코드가 생성되고 플랫폼에 맞춰서 클래스파일을 java라는 명령어로 실행하면 JVM이 플랫폼에 맞춰서 실행한다. 
-JVM은 OS에 종속적이다. (운영체제마다 맞는 JVM 설치해야함)
-JVM은 바이트...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>SW공학</title>
-    <link href="http://localhost:4000/posts/sw2/" rel="alternate" type="text/html" title="SW공학" />
-    <published>2023-11-28T15:35:22+09:00</published>
-  
-    <updated>2023-11-28T15:35:22+09:00</updated>
-  
-    <id>http://localhost:4000/posts/sw2/</id>
-    <content src="http://localhost:4000/posts/sw2/" />
+    <id>http://localhost:4000/posts/network01/</id>
+    <content src="http://localhost:4000/posts/network01/" />
     <author>
       <name>JunStiN</name>
     </author>
@@ -92,7 +36,7 @@ JVM은 바이트...
     
     <category term="개발" />
     
-    <category term="SW공학" />
+    <category term="네트워크" />
     
   
 
@@ -104,33 +48,32 @@ JVM은 바이트...
 
 
 
-      SW 공학 - GIT
+      
+
+웹브라우저에 www.google.com 을 치면 무슨 일이 일어나는가?
+
+
+
+구글 서버의 80포트로 htttp req메시지를 보내는것.
+해당 요청을 인터넷을 통해 구글에 요청하기위해 패킷을 만들어야함.
+
+ㅁ응용계층: http, dns, smtp 등 
+=&amp;gt; HTTP 요청
+
+ㅁ전송계층
+TCP로 연결
+
+  SP 시작포트번호: 내컴퓨터 포트번호
+  DP 목적지포트번호: www.google.com 은 80포트로 알고있음.
 
 
 
 
-🌀Git
+ㅁ인터넷계층
 
-  분산 버전 관리 시스템으로서, 소스 코드의 변경사항을 추적하는데 사용
-  로컬 시스템과 원격 시스템을 두어, 로컬에서 작업 후 원격공간과 동기화
-  주요 명령어에는 add, commit, push, merge, branch, checkout 등
-  브랜치(branch) 기능을 통해 여러 개발자가 동시에 개발하면서도 충돌 없이 작업
-  git은 리눅스 토르발즈에 의해 개발된 이후 오픈소스프로젝트에서 관리
-
-
-
-
-
-🌀Github
-
-  Github 소스코드가 온라인에서 관리되고 협업할 수 있는 플랫폼
-  즉, Github은 Git의 리포지토리를 온라인상에서 관리하기 위한 플랫폼
-  Github -&amp;gt; 마이크로소프트에서 인수
-
-
-
-
-
+  SA 시작아이피주소: 내 시작주소는 당연히 알고있음
+  DA 목적지아이피주소: 도메인정보만 알고있음. -&amp;gt;  DNS프로토콜을 통해 알아낼수있음.
+  브라우저는 OS에게 www.google.com에 대한 IP주소를 알고 싶다고 요청함. -&amp;gt; OS에서 ...
     </summary>
   
 
@@ -138,176 +81,14 @@ JVM은 바이트...
 
   
   <entry>
-    <title>마크다운 내용 정리글</title>
-    <link href="http://localhost:4000/posts/Markdown/" rel="alternate" type="text/html" title="마크다운 내용 정리글" />
-    <published>2023-11-28T10:09:22+09:00</published>
+    <title>한화시스템 BEYOND 캠프 3기 5주차 회고</title>
+    <link href="http://localhost:4000/posts/week5/" rel="alternate" type="text/html" title="한화시스템 BEYOND 캠프 3기 5주차 회고" />
+    <published>2023-12-17T23:37:00+09:00</published>
   
-    <updated>2023-11-28T10:09:22+09:00</updated>
+    <updated>2023-12-18T04:28:21+09:00</updated>
   
-    <id>http://localhost:4000/posts/Markdown/</id>
-    <content src="http://localhost:4000/posts/Markdown/" />
-    <author>
-      <name>JunStiN</name>
-    </author>
-
-  
-    
-    <category term="개발" />
-    
-    <category term="마크다운" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      asdasd
-
-마크다운 작성을 위한 게시글
-
-
-
-
-  제목 Header
-
-
-H1은 ===로도 만들 수 있습니다.
-this h1 
-===
-
-
-H2는 —로도 만들 수 있습니다.
-this h2
----
-
-
-
-
-제목 1
-제목 2
-제목 3
-제목 4
-제목 5
-제목 6
-
-
-  줄바꿈 (Line Breaks) .
-    
-      띄어쓰기 2번 또는 로 표현 가능 하다.
-    
-  
-  
-    수평선 (Horizontal Rule)
-  
-  
-    글자 강조 (Emphasis)
-  
-  
-    인용문 (BlockQuote)
-  
-  
-    목록 (List)
-  
-  
-    체크리스트
-  
-  
-    코드블럭
-  
-  
-    링크 (Links)
-  
-  
-    이미지 (Images)
-  
-  
-    ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>SW공학</title>
-    <link href="http://localhost:4000/posts/sw/" rel="alternate" type="text/html" title="SW공학" />
-    <published>2023-11-28T09:09:22+09:00</published>
-  
-    <updated>2023-11-28T09:09:22+09:00</updated>
-  
-    <id>http://localhost:4000/posts/sw/</id>
-    <content src="http://localhost:4000/posts/sw/" />
-    <author>
-      <name>JunStiN</name>
-    </author>
-
-  
-    
-    <category term="개발" />
-    
-    <category term="SW공학" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      SW 공학
-
-
-
-
-
-  
-    소프트웨어 공학은 인류의 이익을 위해서 소프트웨어와 관련된 원리, 지식, 도구등을 활용하여 새로운 제품, 도구등을 만드는 것
-  
-  계획, 요구사항 분석, 설계, 구현, 시험, 및 유지보수과정(폭포수모델)
-  프로젝트 계획
-    
-      문제 정의 (무엇을 개발할지)
-      법적, 경제적, 기술적 타당성 조사
-      일정 계획
-        
-          WBS(Work Breakdown Structure) 대표적
-          작업 분할 구조도
-          프로젝트 목표를 달성하기 위해 필요한 활동과 업무를 세분화하는 작업
-          수행사 및 담당자까지 지정
-        
-      
-    
-  
-
-
-
-
-
-  프로젝트 계획
-  ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>한화시스템 BEYOND 캠프 3기 2주차 회고</title>
-    <link href="http://localhost:4000/posts/week2/" rel="alternate" type="text/html" title="한화시스템 BEYOND 캠프 3기 2주차 회고" />
-    <published>2023-11-26T23:37:00+09:00</published>
-  
-    <updated>2023-11-26T23:37:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/week2/</id>
-    <content src="http://localhost:4000/posts/week2/" />
+    <id>http://localhost:4000/posts/week5/</id>
+    <content src="http://localhost:4000/posts/week5/" />
     <author>
       <name>JunStiN</name>
     </author>
@@ -330,7 +111,7 @@ this h2
 
       
 
-한화시스템 BEYOND 캠프 3기 2주차 회고
+한화시스템 BEYOND 캠프 3기 5주차 회고
 
 
 
@@ -339,27 +120,210 @@ this h2
 
 
 
+(벌써 시작한지 한달이다)
+
+
+
 1. 전반적인 느낀 점 (일주일 동안 한 일)
-- 데이터베이스 설계 프로젝트를 위해 팀구성 + 자리 재배치가 이루어졌음.
-팀프로젝트는 학교 졸업이후로는 처음하는거라서 적응하는데 시간이 걸릴거같다...
-해당 팀이 끝까지 갈 지는 잘 모르겠지만,
-최선을 다해 원하는 결과를 얻을 수 있도록 최선을 다하자 !!
+
+
+
+이번 한 주는 자바라는 언어와 친해지는 한 주였다.
+
+자바가 처음이라서인지 손에 잘 잡히지않아서 무언가를 좀 해보려하는데, 일단 되는게 없다. 
+(근데 또 뭔가를 붙여서 어거지로 되게 한다)
+
+그리고 수업은 자바의 핵심이라고 할 수 있는 
+컬렉션과 객체지향의 꽃인 클래스가 진행이 되었는데 
+내가 할 수 있는건 아무것도 없었다.
 
 
 
 
-2. 좋았던 점 (좋았거나 내가 잘했던 점)
-- 5층 도서관?에 원하는 책이 생겨서 바로 빌릴 수 있었다 ㅎ
+그래서 앞으로는 자바와 친해지기로 정했다.
+그런데 이 친구 참 어렵다.
 
-- 매니저님들이 수업과 공부에 집중할 수 있도록 환경을 조성해주는것에
-이 글을 통해서 큰 감사의 인사를 드립니다.
+컬렉션을 배우는 주간이라서 컬렉션에 대해 이해를 해보려했지만 참 이해하기 어렵다.
+그리고 이번주 수업동안 가장 큰 충격은 무엇보다 자바에서는
+컬렉션에...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>자바 Thread_15</title>
+    <link href="http://localhost:4000/posts/Java-Thread15/" rel="alternate" type="text/html" title="자바 Thread_15" />
+    <published>2023-12-15T16:09:22+09:00</published>
+  
+    <updated>2023-12-15T16:09:22+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Java-Thread15/</id>
+    <content src="http://localhost:4000/posts/Java-Thread15/" />
+    <author>
+      <name>JunStiN</name>
+    </author>
+
+  
+    
+    <category term="자바" />
+    
+    <category term="멀티스레딩" />
+    
+  
+
+  
+    <summary>
+      
 
 
 
 
-3. 아쉬웠던 점
-- 시간이 지나감에 따라 다른 기수들도 팀프로젝트를 하러 윗층까지 올라오는데,
-...
+
+      
+
+가상 스레드
+
+
+
+
+  시작 메서드를 실행하면 애플리케이션에 새로운 OS스레드를 만들어달라고 OS에 요청함
+  이후 JVM에 요청해 정해진 크기의 스택 공간을 할당받아 스레드와 로컬변수를 저장함 
+=&amp;gt; OS는 CPU 스레드 스케줄링과 실행에 전적인 책임이 있음, JVM내부의 스레드는 얕은 계층, 혹은 운영체제 스레드를 감싸고 있는 것에 불과 (자바 스레드 == 플랫폼 스레드)
+
+
+
+
+
+  자바 플랫폼 스레드는 기본적으로 무거움(비용이 큼)
+그리고 OS스레드와 1:1 매칭된다(OS스레드가 JVM의 정적 공간에 묶여있음)
+—
+—
+
+
+가상스레드는 JDK 21이상부터 사용가능
+
+  가상 스레드는 다른 스레드와 달리 우리가 동시에 실행하고 메서드를 시작할 코드를 가지고 있어야함
+  하지만 플랫폼 스레드...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>자바 Thread_14</title>
+    <link href="http://localhost:4000/posts/Java-Thread14/" rel="alternate" type="text/html" title="자바 Thread_14" />
+    <published>2023-12-15T16:09:22+09:00</published>
+  
+    <updated>2023-12-15T16:09:22+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Java-Thread14/</id>
+    <content src="http://localhost:4000/posts/Java-Thread14/" />
+    <author>
+      <name>JunStiN</name>
+    </author>
+
+  
+    
+    <category term="자바" />
+    
+    <category term="멀티스레딩" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+논-블로킹
+
+자바 스레드12 ~ 13의 내용와 이어지는 내용으로 
+꼭 두 개의 글을 같이 봐야함
+
+
+
+
+  논블로킹을 호출하면 해당 메서드는 차단되지않음
+  바로 반환하기때문에 스레드가 다음 작업을 할 수 있음
+(결과를 인자로 받는 콜백 함수)
+
+
+
+
+
+  요청을 처리하는 스레드가 차단되지않았기에 코어보다 많은 스레드를 생성할 필요가 없음
+  CPU를 쉴틈없이 사용중이니 컨텍스트 스위치도 없음
+  그러면 스레드를 더 생성할 이유는 코어가 더 많아서 병렬처리할떄임
+  논블로킹IO 사용시 코어수 == 스레드수 모델 가능함(CPU 연산을 수행하는 프로세스에 최적의 성능을 뽑아낼 수 있음)
+
+
+
+
+
+  단점은 코드 가독성이 블로킹IO에 비해 너무 안좋고 적용하는 코드의 레벨이 너무 높음 (매우 어려움)
+ ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>자바 Thread_13</title>
+    <link href="http://localhost:4000/posts/Java-Thread13/" rel="alternate" type="text/html" title="자바 Thread_13" />
+    <published>2023-12-15T12:09:22+09:00</published>
+  
+    <updated>2023-12-15T12:09:22+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Java-Thread13/</id>
+    <content src="http://localhost:4000/posts/Java-Thread13/" />
+    <author>
+      <name>JunStiN</name>
+    </author>
+
+  
+    
+    <category term="자바" />
+    
+    <category term="멀티스레딩" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+작업당 스레드 / 요청당 스레드
+
+자바 스레드12의 내용와 이어지는 내용으로 
+꼭 두 개의 글을 같이 봐야함
+
+
+// 실행할 작업의 수
+private static final int NUMBER_OF_TASK = 1000;
+
+    public static void main(String[] args) {
+        System.out.println("Enter to start");
+        Scanner sc = new Scanner(System.in);
+        sc.nextLine();
+
+        long start = System.currentTimeMillis();
+        performTask();
+        System.out.println("task from ...
     </summary>
   
 

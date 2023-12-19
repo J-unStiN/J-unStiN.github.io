@@ -48,7 +48,7 @@
 <meta property="twitter:title" content="자바 Thread_2" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-27T00:11:30+09:00","datePublished":"2023-11-23T23:09:22+09:00","description":"왜, 언제 스레드를 멈춰야 하는가?? 스레드는 아무것도 하지 않을때에도 리소스를 사용함. 메모리와 커널 리소스 CPU 시간뿐아니라 캐시까지 사용 생성한 스레드가 이미 작업을 완료했으면, 사용하지 않는 스레드의 리소스를 정리해야함. 스레드가 오작동을 해야하면 중지해야함 ! (응답없는데 서버에 요청) 애플리케이션 전체를 중단하기 위해서임 ! (최소 하나의 스레드만 실행되고 있어도 프로세스는 종료되지않음)","headline":"자바 Thread_2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Java-Thread2/"},"url":"http://localhost:4000/posts/Java-Thread2/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-14T12:07:17+09:00","datePublished":"2023-11-23T23:09:22+09:00","description":"왜, 언제 스레드를 멈춰야 하는가?? 스레드는 아무것도 하지 않을때에도 리소스를 사용함. 메모리와 커널 리소스 CPU 시간뿐아니라 캐시까지 사용 생성한 스레드가 이미 작업을 완료했으면, 사용하지 않는 스레드의 리소스를 정리해야함. 스레드가 오작동을 해야하면 중지해야함 ! (응답없는데 서버에 요청) 애플리케이션 전체를 중단하기 위해서임 ! (최소 하나의 스레드만 실행되고 있어도 프로세스는 종료되지않음)","headline":"자바 Thread_2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Java-Thread2/"},"url":"http://localhost:4000/posts/Java-Thread2/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -661,13 +661,13 @@
 
 <time
   
-  data-ts="1701011490"
+  data-ts="1702523237"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Nov 27, 2023
+  Dec 14, 2023
 </time>
 
         </span>
@@ -710,7 +710,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="644 words"
+  title="671 words"
 >
   <em>3 min</em> read</span>
 
@@ -935,8 +935,13 @@
 <h3 id="thread-join"><span class="me-2">Thread join</span><a href="#thread-join" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <ul>
   <li>스레드는 각각 독립적이고 실행순서를 우리가 통제할 수 없다.</li>
-  <li></li>
 </ul>
+
+<p><br /></p>
+
+<p>출처 - https://kmooc.udemy.com/course/java-multi-threading/ 
+(Java 멀티스레딩, 병행성 및 성능 최적화 - 전문가 되기
+)</p>
 
   </div>
 
@@ -1064,14 +1069,35 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/intro/">첫 블로그 글, 소개</a>
+          <a href="/posts/network01/">네트워크1 - google.com</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Java-Thread2/">자바 Thread_2</a>
+          <a href="/posts/week5/">한화시스템 BEYOND 캠프 3기 5주차 회고</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Java-Thread9/">자바 Thread_9</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Java-Thread11/">자바 Thread_11</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Java-Thread8/">자바 Thread_8</a>
         </li>
       
     </ul>
@@ -1128,7 +1154,15 @@
     
     
     
-      
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1184,6 +1218,79 @@
     
     
     
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -1214,6 +1321,12 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/markdown/">markdown</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/spring/">spring</a>
       
     </div>
   </section>
@@ -1280,6 +1393,162 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -1308,7 +1577,7 @@
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/Java-Thread/" class="post-preview card h-100">
+          <a href="/posts/Java-Thread6/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1320,14 +1589,14 @@
 
 <time
   
-  data-ts="1700489362"
+  data-ts="1701936562"
   data-df="ll"
   
 >
-  Nov 20, 2023
+  Dec  7, 2023
 </time>
 
-              <h4 class="pt-0 my-2">자바 Thread_1</h4>
+              <h4 class="pt-0 my-2">자바 Thread_6</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1336,22 +1605,19 @@
 
 
 
-                  
-  왜 쓰레드가 필요한가??
+                   
 
+락킹
 
-
-  반응성
-  성능
-
-
-
-  컨텍스트 스위치
+  
+    멀티스레드 애플리케이션을 제작할 때 Fine-Grained(세밀한 락킹), Coarse-Grained(성긴 락킹) 을 선택할 수 있음.
+  
+  
+    Coarse-Grained
     
-      어플리케이션 각각의 인스턴스는 독립적으로 실행이 됨.
-      일반적으로는 코어의 개수보다 프로세스의 개수가 더 많고, 하나의 프로세스는 하나 이상의 쓰레드가 있음.
-그래서 OS는 스레드 하나를 실행하고, 멈추고 다시 실행하는것이 컨텍스트 스위치
-&amp;l...
+      단일 락킹만 신경쓰면 된다
+      공유 리소스에 액세스할 떄마다 해당 락킹만 사용하면 됨
+      메서드에 synchron...
                 </p>
               </div>
             </div>
@@ -1359,7 +1625,7 @@
         </article>
       
         <article class="col">
-          <a href="/posts/java_question/" class="post-preview card h-100">
+          <a href="/posts/Java-Thread7/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1371,14 +1637,14 @@
 
 <time
   
-  data-ts="1701163822"
+  data-ts="1702022962"
   data-df="ll"
   
 >
-  Nov 28, 2023
+  Dec  8, 2023
 </time>
 
-              <h4 class="pt-0 my-2">자바 질문 모음</h4>
+              <h4 class="pt-0 my-2">자바 Thread_7</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1387,24 +1653,69 @@
 
 
 
-                  자바 질문 모음집 (계속 추가, 수정중)
+                  
 
-1. JVM이 무엇이고, 왜 플랫폼 독립적 언어인가?
+ReentrantLock
 
-
+  synchronized 키워드처럼 작동함
+  그러나 명확한 락킹과 언락킹을 명시해야함
+  단점은 공유된 리소스사용한 후 언락킹을 명시안했을때 데드락의 원인이 된다.
+  락킹, 언락킹을 명시하더라도 throwExceptionMethod로 인해 문제가 생기면 임계영역에서 에러가 났으니 언락이 호출 안 될 수도있음
   
-    JVM 핵심은 컴파일이 된 바이트코드를 실행시켜주고 플랫폼 종속적 -&amp;gt; 이러한 이유로 크로스 플랫폼이 가능.
+ ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/Java-Thread8/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
 
-    ## 자바 실행 원리
-    
-      소스 작성
-      컴파일
-      실행
-    
+
+
+
+<time
   
+  data-ts="1702462162"
+  data-df="ll"
+  
+>
+  Dec 13, 2023
+</time>
+
+              <h4 class="pt-0 my-2">자바 Thread_8</h4>
+              <div class="text-muted">
+                <p>
+                  
 
 
-자바 코드로 ...
+
+
+
+                  
+
+asd
+
+세마포어
+
+  허가하고 권한을 부여함.
+  사용자 수를 특정 리소스나 그룹을 제한하는데 사용 가능함.
+  리소스당 사용자 하나만 허가하는 락과 달리 세마포어는 사용자에게 리소스를 제한할 수 있음.
+  임계 영역이나 리소스마다 사용자 수를 제한할 수 있음
+  스레드간 통신을 위한 수단!!!!
+  ex) 주차장 빈공간과 대기열
+
+
+
+
+
+  L...
                 </p>
               </div>
             </div>
@@ -1535,7 +1846,15 @@
     
     
     
-      
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1591,6 +1910,79 @@
     
     
     
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -1621,6 +2013,12 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/markdown/">markdown</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/spring/">spring</a>
       
     </div>
   </section>
