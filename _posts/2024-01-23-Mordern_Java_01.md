@@ -38,7 +38,89 @@ asd
 <br><br>
 
 
-## 람다 
+## 람다  asd
+- 람다는 이름이 없는 함수와 같다
+- 익명 함수로 람다를 호출 가능
+  - 파라미터
+  - 리턴타입
+- 변수에 할당되어 자바의 다른 변수처럼 통과 가능
+
+```java
+() == 람다 인풋 파라미터
+->  == 화살표
+{} == 람다 바디
+```
+
+<br>
+
+### 람다의 특징
+- 단일 추상적 메소드(기능적 인터페이스)
+
+<br>
+
+
+### Runnable 예시
+```java
+Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Inside Runnable 1");
+            }
+        };
+
+        new Thread(runnable).start();
+```
+- 자바 8 이전은 직접 명령형 프로그래밍으로 코드를 작성해야만했다.
+
+<br>
+
+```java
+Runnable runnableLambda = () -> {System.out.println("Inside Runnable 2");};
+
+        Runnable runnableLambdaMultiStatements = () -> {
+                                        System.out.println("Inside Runnable 3");
+                                        System.out.println("Inside Runnable 3");
+        };
+
+        Runnable runnableLambdaSimple = () -> System.out.println("Inside Runnable 3");
+
+
+        new Thread(runnableLambda).start();
+        new Thread(runnableLambdaMultiStatements).start();
+        new Thread(runnableLambdaSimple).start();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Inside Runnable 3");
+            }
+        }).start();
+
+        new Thread(() -> System.out.println("Inside Runnable 4")).start();
+```
+- 람다는 단일 문장이나 식만 있으면 중괄호 없이 작성 가능하다.
+- 람다식으로 작성하면 굳이 익명클래스로 작성 안해도됨.
+
+<br><br>
+
+
+### Comparator 예시
+```java
+Comparator<Integer> comparator = new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o1.compareTo(o2);
+            }
+        };
+```
+<br>
+```java
+Comparator<Integer> comparator = (Integer a, Integer b) -> {return a.compareTo(b);};
+
+Comparator<Integer> comparator = (a, b) -> a.compareTo(b);
+```
+- Comparator 도 람다식으로 인터페이스를 구현해 사용 가능함.
+
 
 
 <br><br><br>
