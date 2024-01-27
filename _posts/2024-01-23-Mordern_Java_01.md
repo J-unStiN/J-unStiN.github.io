@@ -115,12 +115,15 @@ Comparator<Integer> comparator = new Comparator<Integer>() {
             }
         };
 ```
+
 <br>
+
 ```java
 Comparator<Integer> comparator = (Integer a, Integer b) -> {return a.compareTo(b);};
 
 Comparator<Integer> comparator = (a, b) -> a.compareTo(b);
 ```
+
 - Comparator 도 람다식으로 인터페이스를 구현해 사용 가능함.
 
 
