@@ -40,7 +40,7 @@ asd
 ---
 <br><br>
 
-### Stream - map 
+### Stream Operations - map 
 ---
 ```java
 List<String> namesUpperCase(List<Student> names){
@@ -61,9 +61,96 @@ List<String> namesUpperCase(List<Student> names){
 
         return namesLengthMap;
 ```
+---
+
+
+<br><br>
+
+
+### Stream Operations - flatMap 
+---
+
+```java
+List<String> printStudentActivities() {
+
+        List<String> studentActivities = StudentDataBase.getAllStudents()
+                .stream()
+                .map(Student::getActivities) //Stream<List<String>>
+                .flatMap(List::stream) //<Stream<String>
+                .collect(toList());
+
+        return studentActivities;
+
+```
+
+```java
+List<String> printUniqueStudentActivities() {
+
+        List<String> studentActivities = StudentDataBase.getAllStudents()
+                .stream()
+                .map(Student::getActivities)
+                .flatMap(List::stream)
+                .distinct()
+                .sorted()
+                .collect(toList());
+
+        return studentActivities;
+```
+
+```java
+long getStudentActivitiesCount() {
+
+        long totalActivities = StudentDataBase.getAllStudents()
+                .stream()
+                .map(Student::getActivities)
+                .flatMap(List::stream)
+                .distinct()
+                .count();
+
+        return totalActivities;
+```
+
+---
+
+<br><br>
+
+
+### Stream Operations - distinct, count, sorted 
+---
+- distinct
+  - 중복되는 요소를 제거하는 함수
+- count
+  - 요소의 개수를 반환하는 함수
+- sorted
+  - 요소를 정렬하는 함수
+
+=> 만약 HashSet으로 반환하는것을 사용한다면 순서도 정렬하면서 중복도 제거된다. (상황에 맞게 기능뿐만 아니라 자료구조도 잘 사용하자)
+
+---
+
+<br><br>
 
 
 
+
+
+### Stream Operations - sorted -> Comparator.comparing
+---
+
+```java
+List<Student> sortStudentsByName(){
+
+       return  StudentDataBase.getAllStudents().stream()
+                .sorted(Comparator.comparing(Student::getName))
+                .collect(toList());
+    }
+```
+- sorted(Comparator.comparing(Student::getName)) 에서 특정 요소를 선택해 정렬이 가능함.
+
+
+---
+
+<br><br>
 
 
 
