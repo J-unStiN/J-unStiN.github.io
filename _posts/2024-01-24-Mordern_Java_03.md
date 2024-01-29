@@ -131,9 +131,6 @@ long getStudentActivitiesCount() {
 <br><br>
 
 
-
-
-
 ### Stream Operations - sorted -> Comparator.comparing
 ---
 
@@ -151,6 +148,87 @@ List<Student> sortStudentsByName(){
 ---
 
 <br><br>
+
+
+
+
+### Stream Operations - filter
+---
+```java
+List<Student> filterStudents(){
+
+        List<Student> filteredStudentList = StudentDataBase.getAllStudents()
+                .stream()
+                .filter(student -> student.getGpa()>=3.9)
+                .filter(student -> student.getGender().equals("female"))
+                .collect(toList());
+
+        return filteredStudentList;
+```
+- 필터를 통해 원하는 조건에 맞는 요소만 처리.
+- 반목문에 if문을 통해 원하는 요소만 넣는것과 같은 역할
+- 조건이 여러개라면 필터를 여러개 넣으면 가능.
+
+---
+
+<br><br>
+
+
+
+
+### Stream Operations - reduce
+---
+
+---
+
+<br><br>
+
+
+
+### Stream Operations - 작성중
+---
+
+---
+
+<br><br>
+
+
+
+### Stream Operations - 작성중
+---
+
+---
+
+<br><br>
+
+
+
+### Stream Operations - 작성중
+---
+
+---
+
+<br><br>
+
+### Stream Operations - 작성중
+---
+
+---
+
+<br><br>
+
+### Stream Operations - 작성중
+---
+
+---
+
+<br><br>
+
+
+
+
+
+
 
 
 
