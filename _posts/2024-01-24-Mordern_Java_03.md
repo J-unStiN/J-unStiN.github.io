@@ -1,5 +1,5 @@
 ---
-title : Modern_Java_03
+title : Modern_Java_03(추가 및 수정중)
 date : 2024-01-24 11:37:00 +09:00
 categories : [자바, 모던자바]
 tags : [java] #소문자만 가능
@@ -13,6 +13,8 @@ asd
 
 ## 서론
 - 원래 순서대로라면 Functional Interface 개념이 먼저 나오는게 맞지만, 상황상 3편부터 스트림에 관련된 내용을 적고 추후에 2편에서 글을 적도록 할 것.
+
+- 먼저는 코드를 올리고, 추후에 글에 내용을 추가.
 
 <br>
 
@@ -178,6 +180,37 @@ List<Student> filterStudents(){
 
 ### Stream Operations - reduce
 ---
+```java
+List<Integer> mylist = List.of(1,3,5,7);
+
+int result = mylist.stream
+        .reduce(1,(a,b) -> a*b);
+
+```
+- a=1, b=1 => a*b 결과 리턴
+- a=1, b=3 => a*b 결과 리턴
+- a=3, b=5 => a*b 결과 리턴
+- a=15, b=7 => a*b 결과 리턴
+- 최종연산 결과 105로 반환
+
+<br>
+
+```java
+String combineStudentNames(){
+
+        return StudentDataBase.getAllStudents().stream()
+                .map(Student::getName)
+                .distinct()
+                .reduce("",(a,b) -> a.concat(b));  // performs multiplication for each element in the stream.
+```
+
+```java
+Optional<Student> getHighestGradeStudent(){
+
+        Optional<Student> studentOptional =  StudentDataBase.getAllStudents().stream()
+                .reduce((s1,s2)->(s1.getGpa()>s2.getGpa()) ? s1 : s2);
+        return studentOptional;
+```
 
 ---
 
@@ -185,7 +218,7 @@ List<Student> filterStudents(){
 
 
 
-### Stream Operations - 작성중
+### Stream Operations - Map + Filter + Reduce Pattern
 ---
 
 ---
