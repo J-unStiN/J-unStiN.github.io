@@ -224,7 +224,8 @@ Optional<Student> getHighestGradeStudent(){
 myList.stream()
         .filter(조건1)
         .filter(조건2)
-        .map(Student::getNoteBook)
+        .map(Student::getNoteBo0ok)
+        .reduce(0, Integer::sum);
 ```
 - reduce의 2번째 파라미터에 sum, max를 통해 a+b, a>b 등을 직접 구현안해도된다.
 - 매핑하기전에 filter의 조건을 추가해 map을 줄이는 방법
@@ -235,8 +236,20 @@ myList.stream()
 
 
 
-### Stream Operations - 작성중
+### Stream Operations - max + reduce
 ---
+```java
+List<Integer> myList = List.of(5,6,7,8,9);
+
+myList.stream()
+        .reduce(0,(x,y) -> x>y ? x : y);
+// 5 -> y
+// 6 -> y
+// 7 -> y
+// 8 -> y
+// 9 -> y       
+```
+
 
 ---
 
@@ -244,7 +257,7 @@ myList.stream()
 
 
 
-### Stream Operations - 작성중
+### Stream Operations - min + reduce
 ---
 
 ---
