@@ -220,6 +220,14 @@ Optional<Student> getHighestGradeStudent(){
 
 ### Stream Operations - Map + Filter + Reduce Pattern
 ---
+```java
+myList.stream()
+        .filter(조건1)
+        .filter(조건2)
+        .map(Student::getNoteBook)
+```
+- reduce의 2번째 파라미터에 sum, max를 통해 a+b, a>b 등을 직접 구현안해도된다.
+- 매핑하기전에 filter의 조건을 추가해 map을 줄이는 방법
 
 ---
 
