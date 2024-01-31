@@ -242,15 +242,13 @@ myList.stream()
 List<Integer> myList = List.of(5,6,7,8,9);
 
 myList.stream()
-        .reduce(0,(x,y) -> x>y ? x : y);
+        .reduce(0,(x,y) -> x < y ? x : y);
 // 5 -> y
 // 6 -> y
 // 7 -> y
 // 8 -> y
 // 9 -> y       
 ```
-
-
 ---
 
 <br><br>
@@ -260,13 +258,40 @@ myList.stream()
 ### Stream Operations - min + reduce
 ---
 
+```java
+List<Integer> myList = List.of(5,6,7,8,9);
+
+myList.stream()
+        .reduce(0,(x,y) -> x < y ? x : y);
+// 5 -> y
+// 6 -> y
+// 7 -> y
+// 8 -> y
+// 9 -> y       
+```
+
 ---
 
 <br><br>
 
 ### Stream Operations - 작성중
 ---
-
+```java
+Optional<Integer> skip(List<Integer> integers){
+        return  integers.stream()
+                .limit(3)
+                .reduce((a,b)-> a+b);
+    }
+```
+```java
+Optional<Integer> skip(List<Integer> integers){
+        return  integers.stream()
+                .skip(3)
+                .reduce((a,b)-> a+b);
+    }
+```
+- limit는 limit의 개수만큼 스트림에 있는 요소를 반복.
+- skip은 이름처럼 skip에서 지정한 숫자만큼 건너뛰고 실행. 
 ---
 
 <br><br>
