@@ -320,9 +320,29 @@ boolean result = StudentDataBase.getAllStudents().stream()
 <br><br>
 
 
-### Stream Operations - 작성중
+### Stream Operations - findAny, findFirst
 ---
+```java
+Optional<Student> findAny(){
 
+        return StudentDataBase.getAllStudents().stream()
+                .filter(student -> student.getGpa()>=3.8)
+                .findAny();
+    }
+```
+
+```java
+Optional<Student> findFirst(){
+
+        return StudentDataBase.getAllStudents().stream()
+                .filter(student -> student.getGpa()>=3.8)
+                .findFirst();
+```
+- findAny: 사용자가 요청 값을 찾으면 반환.
+- findFirst: 사용자가 요청 값의 첫번째로 찾은것을 바로 반환. 
+<br>
+
+- 가장 중요한 차이가 있는데, <U>병렬로 처리할 때 findany로 찾게되면 병렬로 실행된 것중 여러개의 병렬처리중 가장 먼저 된 값</U>을 찾게되서 실행마다 값이 달라질 수 있음.
 ---
 
 <br><br>
