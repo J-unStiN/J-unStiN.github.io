@@ -274,7 +274,7 @@ myList.stream()
 
 <br><br>
 
-### Stream Operations - 작성중
+### Stream Operations - limit, skip
 ---
 ```java
 Optional<Integer> skip(List<Integer> integers){
@@ -315,6 +315,7 @@ boolean result = StudentDataBase.getAllStudents().stream()
 - anyMatch: 하나의 속성이 있는지 확인해서 있으면 true를 반환함.
 - allMatch: 전부다 맞아야 true를 반환.
 - noneMatch: 하나라도 없으면 true를 반환함.
+
 ---
 
 <br><br>
